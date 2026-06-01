@@ -2127,18 +2127,18 @@ footer {
    About Section — Professional, Clean, Animated
    ========================================================================== */
 
-/* ── Scroll-triggered animation base states ── */
-[data-animate] {
+/* ── Scroll-triggered animation base states (only active when JS enables them) ── */
+body.animations-active [data-animate] {
   opacity: 0;
   transition: opacity 0.7s ease, transform 0.7s ease;
   transition-delay: var(--delay, 0s);
 }
-[data-animate="fade-up"]    { transform: translateY(40px); }
-[data-animate="fade-down"]  { transform: translateY(-30px); }
-[data-animate="fade-left"]  { transform: translateX(50px); }
-[data-animate="fade-right"] { transform: translateX(-50px); }
+body.animations-active [data-animate="fade-up"]    { transform: translateY(40px); }
+body.animations-active [data-animate="fade-down"]  { transform: translateY(-30px); }
+body.animations-active [data-animate="fade-left"]  { transform: translateX(50px); }
+body.animations-active [data-animate="fade-right"] { transform: translateX(-50px); }
 
-[data-animate].is-visible {
+body.animations-active [data-animate].is-visible {
   opacity: 1;
   transform: translate(0);
 }
@@ -2954,5 +2954,12 @@ footer {
 
   .milestone-item {
     flex: 0 0 calc(50% - 12px);
+  }
+}
+/* Fix mobile visibility issues caused by previous animations */
+@media (max-width: 768px) {
+  .about-img, .about-content, .service-card, .product-card, .how-it-steps .step-card, .news-card, .contact-field, .testimonial-item {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

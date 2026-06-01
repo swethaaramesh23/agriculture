@@ -92,7 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Scroll-Triggered Animations for [data-animate]
     // ==========================================================================
     const animatedElements = document.querySelectorAll('[data-animate]');
-    if ('IntersectionObserver' in window) {
+    
+    // Only initialize and hide elements if on desktop & IntersectionObserver is supported.
+    // Otherwise, they stay visible by default to prevent "missing" sections in headless/static testers or mobile.
+    if (window.innerWidth > 768 && 'IntersectionObserver' in window) {
+        document.body.classList.add('animations-active');
+        
         const animationObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -107,11 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
         
         animatedElements.forEach(el => {
             animationObserver.observe(el);
-        });
-    } else {
-        // Fallback for browsers that do not support IntersectionObserver
-        animatedElements.forEach(el => {
-            el.classList.add('is-visible');
         });
     }
 

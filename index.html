@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,7 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="preloader-content">
-            <span class="loader-icon">🌱</span>
+            <span class="loader-icon"><img src="logo1.webp" alt=""></span>
             <h2>Growing Better Future...</h2>
             <div class="loader-bar">
                 <div class="loader-progress"></div>
@@ -31,13 +31,13 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="404.html">About</a></li>
-                <li><a href="404.html">Services</a></li>
-                <li><a href="404.html">Products</a></li>
-                <li><a href="404.html">How It Works</a></li>
-                <li><a href="404.html">Blogs</a></li>
-                <li><a href="404.html">FAQ</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#crops">Products</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#news">Blogs</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li class="mobile-only"><a href="404.html">Login</a></li>
                 <li class="mobile-only"><a href="404.html">Sign Up</a></li>
             </ul>
@@ -62,14 +62,14 @@
         <div class="hero-grid">
             <div class="hero-left">
                 <div class="hero-image-wrap">
-                    <img src="assets/13.webp" alt="Premium Wheat Farming" class="hero-img hero-slide active">
-                    <img src="assets/3.webp" alt="Organic Corn Farming" class="hero-img hero-slide">
-                    <img src="assets/5.webp" alt="Sustainable Soybeans Farming" class="hero-img hero-slide">
+                    <img src="assets/1A.webp" alt="Premium Wheat Farming" class="hero-img hero-slide active">
+                    <img src="assets/1B.webp" alt="Organic Corn Farming" class="hero-img hero-slide">
+                    <img src="assets/13.webp" alt="Sustainable Soybeans Farming" class="hero-img hero-slide">
                 </div>
             </div>
             <div class="hero-right">
                 <div class="hero-content">
-                    <span class="hero-tag">🌾 Welcome to the Future of Farming</span>
+                    <span class="hero-tag"> Welcome to the Future of Farming</span>
                     <h1 id="typewriter-title">Smart Farming for </h1>
                     <p class="hero-desc">Empowering farmers with modern technology and sustainable practices for a
                         greener tomorrow.</p>
@@ -79,9 +79,9 @@
 
                     <!-- Trust Badges -->
                     <div class="hero-badges">
-                        <span class="trust-badge">🌱 100% Organic</span>
-                        <span class="trust-badge">🤖 AI-Powered</span>
-                        <span class="trust-badge">🌍 Eco Friendly</span>
+                        <span class="trust-badge"> 100% Organic</span>
+                        <span class="trust-badge"> AI-Powered</span>
+                        <span class="trust-badge"> Eco Friendly</span>
                     </div>
 
                     <div class="btn-group">
@@ -94,96 +94,159 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-pattern-bg"></div> <!-- Soft background pattern -->
-        <h2 class="section-title">Who We Are</h2>
-        <div class="about-grid">
-            <div class="about-img-wrap">
-                <img src="assets/4.webp" alt="Farmers working" class="about-img">
+    <section class="about-section" id="about" style="background: #f8fafc; padding: 100px 5%;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span
+                    style="display: inline-block; background: rgba(15, 81, 50, 0.1); color: var(--primary-color); padding: 8px 20px; border-radius: 30px; font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;">Our
+                    Story</span>
+                <h2
+                    style="font-size: 3rem; color: var(--primary-color); margin-top: 15px; font-family: var(--font-heading); font-weight: 800;">
+                    Cultivating a <span style="color: var(--accent-color);">Greener</span> Tomorrow</h2>
             </div>
-            <div class="about-content">
-                <h3>Our Mission & Sustainable Focus</h3>
-                <p class="about-text-desc">We are a leading agricultural technology company dedicated to transforming
-                    traditional farming. Our mission is to promote sustainable farming practices, increase crop yield,
-                    and empower the agricultural community with modern tools.</p>
-                <p class="about-text-desc" style="margin-top: 15px;">By integrating cutting-edge IoT sensors, AI-driven
-                    analytics, and eco-friendly practices, we ensure that every drop of water and every seed is utilized
-                    efficiently, reducing waste and maximizing productivity.</p>
 
-                <!-- Rotating/Scrolling Statistics Slider -->
-                <div class="stats-slider-container">
-                    <div class="stats-slider-track">
-                        <div class="stat-card">
-                            <span class="stat-card-icon">🌾</span>
-                            <div class="stat-card-info">
-                                <h4 class="counter" data-target="50000" data-suffix="K+" data-divisor="1000">1000+</h4>
-                                <p>Farmers Supported</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-card-icon">🚜</span>
-                            <div class="stat-card-info">
-                                <h4 class="counter" data-target="120" data-suffix="+">120</h4>
-                                <p>Smart Farms</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-card-icon">😊</span>
-                            <div class="stat-card-info">
-                                <h4 class="counter" data-target="98" data-suffix="%">98</h4>
-                                <p>Satisfaction Rate</p>
-                            </div>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-card-icon">🏆</span>
-                            <div class="stat-card-info">
-                                <h4 class="counter" data-target="15" data-suffix="+">15</h4>
-                                <p>Years Experience</p>
-                            </div>
-                        </div>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
+                <div style="position: relative;">
+                    <img src="assets/7.webp" alt="Modern Agriculture"
+                        style="width: 100%; height: 500px; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    <div
+                        style="position: absolute; bottom: -20px; right: -20px; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                        <h4 style="color: var(--accent-color); font-size: 2.5rem; font-weight: 800; margin: 0;">25+</h4>
+                        <p style="margin: 0; font-weight: 600; color: var(--text-dark);">Years of Innovation</p>
                     </div>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.8rem; color: var(--primary-color); margin-bottom: 20px;">Leading the Digital
+                        Transformation in Agriculture</h3>
+                    <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 30px;">We are
+                        revolutionizing the farming industry by integrating state-of-the-art AI, IoT sensors, and drone
+                        analytics. Our mission is to empower local farmers and global agricultural enterprises to yield
+                        more with less, preserving natural resources for future generations.</p>
+
+                    <ul style="list-style: none; padding: 0; margin-bottom: 40px;">
+                        <li
+                            style="display: flex; align-items: center; margin-bottom: 15px; font-size: 1.1rem; color: var(--text-dark); font-weight: 500;">
+                            <span
+                                style="background: var(--accent-color); color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px;"></span>
+                            100% Eco-Friendly Practices
+                        </li>
+                        <li
+                            style="display: flex; align-items: center; margin-bottom: 15px; font-size: 1.1rem; color: var(--text-dark); font-weight: 500;">
+                            <span
+                                style="background: var(--accent-color); color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px;"></span>
+                            Next-Gen Smart Sensors
+                        </li>
+                        <li
+                            style="display: flex; align-items: center; margin-bottom: 15px; font-size: 1.1rem; color: var(--text-dark); font-weight: 500;">
+                            <span
+                                style="background: var(--accent-color); color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px;"></span>
+                            Proven Yield Optimization
+                        </li>
+                    </ul>
+
+                    <button class="btn-primary" style="padding: 15px 35px; font-size: 1.1rem;"
+                        onclick="window.location.href='404.html'">Read Our Full Story</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
-        <h2 class="section-title">Our Services</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <div class="service-icon">🌾</div>
-                <h3>Crop Management</h3>
-                <p>Advanced tracking and analytics for better yield optimization.</p>
+    <section class="service-section" id="services" style="padding: 100px 5%; background: white;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span
+                    style="display: inline-block; background: rgba(15, 81, 50, 0.1); color: var(--primary-color); padding: 8px 20px; border-radius: 30px; font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;">What
+                    We Do</span>
+                <h2
+                    style="font-size: 3rem; color: var(--primary-color); margin-top: 15px; font-family: var(--font-heading); font-weight: 800;">
+                    Our Core <span style="color: var(--accent-color);">Services</span></h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 20px auto 0;">Comprehensive
+                    solutions tailored for modern agricultural demands.</p>
             </div>
-            <div class="service-card">
-                <div class="service-icon">💧</div>
-                <h3>Smart Irrigation</h3>
-                <p>Automated water management systems to save resources.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🚜</div>
-                <h3>Equipment Rental</h3>
-                <p>Access high-end farming machinery at affordable rates.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">📊</div>
-                <h3>Soil Analytics</h3>
-                <p>Comprehensive soil testing and fertility management.</p>
-            </div>
-            <!-- Additional Service Cards -->
-            <div class="service-card">
-                <div class="service-icon">🤝</div>
-                <h3>Consultancy</h3>
-                <p>Personalized expert advice to boost farm productivity and sustainability.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">📦</div>
-                <h3>Supply Chain</h3>
-                <p>Integrated logistics and distribution solutions for farm produce.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <!-- Service 1 -->
+                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
+                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
+                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">Drone & Satellite
+                        Analytics</h3>
+                    <p style="color: #555; line-height: 1.7;">Get precise bird's-eye insights on crop health, growth
+                        patterns, and irrigation needs using our autonomous drone fleet.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
+                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
+                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">Smart Soil
+                        Management</h3>
+                    <p style="color: #555; line-height: 1.7;">Automated IoT moisture sensors and nutrient trackers that
+                        deliver real-time soil data directly to your mobile dashboard.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
+                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
+                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">AI Yield
+                        Forecasting</h3>
+                    <p style="color: #555; line-height: 1.7;">Predict harvests months in advance with our machine
+                        learning models trained on historical and climatic variables.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
+                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
+                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">Carbon Farming</h3>
+                    <p style="color: #555; line-height: 1.7;">Monetize your sustainable practices by generating carbon
+                        credits. We help you track and verify your farm's carbon sequestration.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
+                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
+                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">Autonomous
+                        Machinery</h3>
+                    <p style="color: #555; line-height: 1.7;">Upgrade your fleet with self-driving tractors and robotic
+                        harvesters designed to operate 24/7 with extreme precision.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
+                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
+                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                    <div
+                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">Supply Chain
+                        Integration</h3>
+                    <p style="color: #555; line-height: 1.7;">Connect directly to global markets and distributors
+                        through our transparent blockchain-based trading network.</p>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- Featured Crops Section -->
     <section id="crops" class="crops">
@@ -276,13 +339,107 @@
         </div>
     </section>
 
+    <!-- Scrolling Statistics Banner -->
+    <section class="stats-banner">
+        <div class="stats-track">
+            <div class="stats-slide">
+                <div class="stat-bubble">
+                    <span class="stat-number" data-target="50" data-suffix="K+">50k</span>
+                    <span class="stat-label">Farmers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-bubble">
+                    <span class="stat-number" data-target="120" data-suffix="+">120</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-bubble">
+                    <span class="stat-number" data-target="98" data-suffix="%">98%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-bubble">
+                    <span class="stat-number" data-target="15" data-suffix="+">15</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <!-- Duplicated for seamless scroll -->
+                <div class="stat-divider"></div>
+                <div class="stat-bubble">
+                    <span class="stat-number-dup">50K+</span>
+                    <span class="stat-label">Farmers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-bubble">
+                    <span class="stat-number-dup">120+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-bubble">
+                    <span class="stat-number-dup">98%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-bubble">
+                    <span class="stat-number-dup">15+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="why-container">
+            <div class="why-text">
+
+                <h2 class="section-title" style="text-align:left; margin-bottom:20px;">Why Choose Us</h2>
+                <p class="why-desc">We combine decades of agricultural expertise with cutting-edge technology to deliver
+                    results that matter â€” for your farm and for the planet.</p>
+                <div class="why-features">
+                    <div class="why-item">
+                        <span class="why-check"></span>
+                        <span>Sustainable Farming</span>
+                    </div>
+                    <div class="why-item">
+                        <span class="why-check"></span>
+                        <span>AI Powered Technology</span>
+                    </div>
+                    <div class="why-item">
+                        <span class="why-check"></span>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="why-item">
+                        <span class="why-check"></span>
+                        <span>Organic Solutions</span>
+                    </div>
+                    <div class="why-item">
+                        <span class="why-check"></span>
+                        <span>Expert Consultants</span>
+                    </div>
+                    <div class="why-item">
+                        <span class="why-check"></span>
+                        <span>Smart Monitoring</span>
+                    </div>
+                </div>
+                <button class="btn-primary" style="margin-top:30px;" onclick="window.location.href='404.html'">Learn
+                    More</button>
+            </div>
+            <div class="why-image">
+                <div class="why-img-wrap">
+                    <img src="assets/6.webp" alt="Why Choose Us - Smart Farming" />
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Weather & Market Prices -->
     <section class="weather-market" style="background: #f1f5f9;">
         <h2 class="section-title">Weather & Market Prices</h2>
         <div class="about-grid">
             <div class="stat-item">
                 <h3 style="color: var(--secondary-color);">Today's Forecast</h3>
-                <h1 style="margin: 20px 0; color: var(--text-dark);">24°C ☀️</h1>
+                <h1 style="margin: 20px 0; color: var(--text-dark);">24°C Weather</h1>
                 <p>Sunny, Humidity: 45%</p>
                 <p>Perfect day for harvesting!</p>
             </div>
@@ -324,13 +481,14 @@
         <p class="section-subtitle" style="text-align:center; color:var(--text-dark); margin-bottom:30px;">Our smart
             farming process from sensor installation to yield improvement.</p>
         <div class="how-it-image">
-            <img src="assets/smart1.webp" class="how-it-img" style="width:100%; max-width:400px;" />
+            <img src="assets/smart1.webp" class="how-it-img"
+                style="width:100%; max-width:400px; height:280px; object-fit:cover; border-radius:16px; box-shadow:0 12px 40px rgba(15,81,50,0.15);" />
         </div>
         <div class="how-it-works-grid">
             <div class="steps-container">
                 <div class="step-card">
                     <div class="step-icon-wrap">
-                        <span class="step-number">1</span><span class="step-icon">🌱</span>
+                        <span class="step-number">1</span><span class="step-icon"></span>
                         <h3>Connect Sensors</h3>
                         <p>Install plug-and-play IoT sensors in your fields to monitor soil moisture, temperature, and
                             nutrient
@@ -339,7 +497,7 @@
                 </div>
                 <div class="step-card">
                     <div class="step-icon-wrap">
-                        <span class="step-number">2</span><span class="step-icon">🌾</span>
+                        <span class="step-number">2</span><span class="step-icon"></span>
                         <h3>Monitor Crops</h3>
                         <p>Observe environmental variables and microclimate changes in real-time on your custom mobile
                             app.
@@ -349,7 +507,7 @@
                 </div>
                 <div class="step-card">
                     <div class="step-icon-wrap">
-                        <span class="step-number">3</span><span class="step-icon">📊</span>
+                        <span class="step-number">3</span><span class="step-icon"></span>
                         <h3>Analyze Data</h3>
                         <p>Our deep learning models process incoming field inputs to deliver actionable fertilization
                             and
@@ -358,7 +516,7 @@
                 </div>
                 <div class="step-card">
                     <div class="step-icon-wrap">
-                        <span class="step-number">4</span><span class="step-icon">🚀</span>
+                        <span class="step-number">4</span><span class="step-icon"></span>
                         <h3>Improve Yield</h3>
                         <p>Apply highly precise, automated smart irrigation to dramatically boost output while cutting
                             water
@@ -370,27 +528,6 @@
         </div>
     </section>
 
-    <!-- Why Choose Us & Stats -->
-    <section class="why-us">
-        <h2 class="section-title">Why Choose Us</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <h3>Eco-Friendly</h3>
-                <p>Committed to 100% sustainable agricultural practices. We prioritize long-term soil health and
-                    biodiversity over short-term gains, ensuring your land remains fertile for generations.</p>
-            </div>
-            <div class="service-card">
-                <h3>Expert Support</h3>
-                <p>24/7 dedicated assistance from our agronomists. Our team of seasoned professionals is always on
-                    standby to help you troubleshoot issues or optimize your farming strategy.</p>
-            </div>
-            <div class="service-card">
-                <h3>Modern Tech</h3>
-                <p>Utilizing IoT, Drones, and AI for smart farming. From satellite imagery to automated drone spraying,
-                    we equip you with the most advanced tools available on the market.</p>
-            </div>
-        </div>
-    </section>
 
     <!-- Testimonials & News -->
     <section id="news" class="testimonials" style="background: white;">
@@ -451,7 +588,7 @@
 
                 <h2>Ready to Double Your Crop Yields?</h2>
                 <img src="assets/consulting.webp" alt="Consulting" class="cta-yield-image"
-                    style="width:100%; max-width:300px; margin-top:15px; border-radius:8px;" />
+                    style="width:100%; max-width:320px; height:200px; object-fit:cover; margin-top:15px; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.18);" />
                 <p>Schedule a call with one of our professional agricultural consultants to receive a customized
                     automation assessment for your fields today.</p>
                 <button class="btn-primary" onclick="window.location.href='#footer'">Book Consultation Now</button>
@@ -495,8 +632,8 @@
             <div class="footer-col">
                 <h4>Contact Us</h4>
                 <ul>
-                    <li>123 Farming Lane, Agriville</li>
-                    <li>Phone: +1 234 567 890</li>
+                    <li>45 Omalur Road, Salem, Tamil Nadu 636004</li>
+                    <li>Phone: +91 427 234 5678</li>
                     <li>Email: info@agritech.com</li>
                 </ul>
             </div>
@@ -511,7 +648,7 @@
             <div class="footer-col footer-map">
                 <h4>Our Head Office</h4>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059445135!2d-74.2598661889984!3d40.69714941774136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62453.08876816185!2d78.09482971831055!3d11.664229250879837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1a087b06e4b%3A0xa5c67b7f5a6f6a03!2sSalem%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1700000000001!5m2!1sen!2sin"
                     width="100%" height="120" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -522,12 +659,12 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" aria-label="Back to Top">▲</button>
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">â–²</button>
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
         aria-label="Chat on WhatsApp">
-        <span class="whatsapp-icon">💬</span>
+        <span class="whatsapp-icon"></span>
     </a>
 
     <script src="assets/js/main.js"></script>
