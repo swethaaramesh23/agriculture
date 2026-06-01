@@ -113,7 +113,74 @@ document.addEventListener("DOMContentLoaded", () => {
         animatedElements.forEach(el => {
             animationObserver.observe(el);
         });
+    // Initialize AOS (allow repeat animations)
+    if (window.AOS) {
+        AOS.init({duration: 1200, once: false, offset: 120, easing: 'ease-out'});
     }
+    // Initialize ScrollReveal (fallback for non-GSAP elements)
+    if (window.ScrollReveal) {
+        const sr = ScrollReveal();
+        sr.reveal('[data-animate]', {
+            distance: '30px',
+            opacity: 0,
+            duration: 800,
+            easing: 'ease-out',
+            interval: 150,
+            reset: false,
+            origin: 'bottom'
+        });
+    }
+    // Initialize GSAP ScrollTrigger animations for service and crop cards
+    if (window.gsap && window.ScrollTrigger) {
+        gsap.registerPlugin(ScrollTrigger);
+        // Service cards
+        gsap.utils.toArray('.core-service-card').forEach(card => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: 'top 85%',
+                    toggleActions: 'play none none reverse'
+                },
+                y: 40,
+                opacity: 0,
+                duration: 0.9,
+                ease: 'power2.out'
+            });
+        });
+        // Crop cards
+        gsap.utils.toArray('.crop-card').forEach(card => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: 'top 85%',
+                    toggleActions: 'play none none reverse'
+                },
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                ease: 'power2.out'
+            });
+        });
+    }
+    // Initialize GSAP animations for hero section
+    if (window.gsap) {
+        gsap.from('.hero', {duration: 1.2, opacity: 0, y: -50, ease: 'power2.out'});
+        // GSAP scroll-reveal for other major sections
+        const sections = document.querySelectorAll('.stats-banner, .why-choose-us, .cta-banner, footer');
+        sections.forEach(sec => {
+            gsap.from(sec, {
+                scrollTrigger: {
+                    trigger: sec,
+                    start: 'top 85%',
+                    toggleActions: 'play none none reverse'
+                },
+                y: 40,
+                opacity: 0,
+                duration: 0.9,
+                ease: 'power2.out'
+            });
+        });
+    }    }
 
 });
 
@@ -171,6 +238,17 @@ if (howSection) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 howSection.classList.add('visible');
+                // GSAP sequential reveal for each step card
+                if (window.gsap) {
+                    gsap.from('.how-it-works .step-card', {
+                        opacity: 0,
+                        y: 30,
+                        scale: 0.9,
+                        duration: 0.8,
+                        ease: 'power2.out',
+                        stagger: 0.25
+                    });
+                }
                 observer.unobserve(entry.target);
             }
         });
@@ -178,3 +256,42 @@ if (howSection) {
     howObserver.observe(howSection);
 }
 
+// Innovation Section Animations
+const innovationSection = document.querySelector('#innovation');
+if (innovationSection) {
+    const innovObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                innovationSection.classList.add('visible');
+                // GSAP staggered reveal for feature items
+                if (window.gsap) {
+                    gsap.from('.innovation-feature-item', {
+                        opacity: 0,
+                        x: -30,
+                        scale: 0.95,
+                        duration: 0.7,
+                        ease: 'back.out(1.4)',
+                        stagger: 0.2
+                    });
+                    gsap.from('.btn-story', {
+                        opacity: 0,
+                        y: 20,
+                        scale: 0.9,
+                        duration: 0.8,
+                        delay: 0.8,
+                        ease: 'elastic.out(1, 0.5)'
+                    });
+                    gsap.from('.innovation-float-badge', {
+                        opacity: 0,
+                        scale: 0,
+                        duration: 0.6,
+                        delay: 0.5,
+                        ease: 'back.out(2)'
+                    });
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    innovObserver.observe(innovationSection);
+}
