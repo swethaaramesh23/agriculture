@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -60,14 +60,14 @@
         <div class="hero-overlay"></div>
         <div class="leaves-container"></div> <!-- Container for floating leaves animation -->
         <div class="hero-grid">
-            <div class="hero-left">
+            <div class="hero-left" data-animate="fade-right">
                 <div class="hero-image-wrap">
                     <img src="assets/1A.webp" alt="Premium Wheat Farming" class="hero-img hero-slide active">
                     <img src="assets/1B.webp" alt="Organic Corn Farming" class="hero-img hero-slide">
                     <img src="assets/13.webp" alt="Sustainable Soybeans Farming" class="hero-img hero-slide">
                 </div>
             </div>
-            <div class="hero-right">
+            <div class="hero-right" data-animate="fade-left">
                 <div class="hero-content">
                     <span class="hero-tag"> Welcome to the Future of Farming</span>
                     <h1 id="typewriter-title">Smart Farming for </h1>
@@ -107,7 +107,7 @@
 
             <div
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
-                <div style="position: relative;">
+                <div style="position: relative;" data-animate="fade-right">
                     <img src="assets/7.webp" alt="Modern Agriculture"
                         style="width: 100%; height: 500px; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     <div
@@ -116,7 +116,7 @@
                         <p style="margin: 0; font-weight: 600; color: var(--text-dark);">Years of Innovation</p>
                     </div>
                 </div>
-                <div>
+                <div data-animate="fade-left">
                     <h3 style="font-size: 1.8rem; color: var(--primary-color); margin-bottom: 20px;">Leading the Digital
                         Transformation in Agriculture</h3>
                     <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 30px;">We are
@@ -149,6 +149,16 @@
                         onclick="window.location.href='404.html'">Read Our Full Story</button>
                 </div>
             </div>
+            
+            <div style="margin-top: 80px; text-align: center;" data-animate="fade-up">
+                <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 30px;">The Journey of Growth</h3>
+                <img src="assets/growth.webp" alt="Plant Growth Stages" style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                <div class="growth-timeline">
+                    <div class="growth-step" data-animate="fade-right" style="transition-delay: 0.1s;">Seed</div>
+                    <div class="growth-step" data-animate="fade-up" style="transition-delay: 0.3s;">Small Plant</div>
+                    <div class="growth-step" data-animate="fade-left" style="transition-delay: 0.5s;">Full Plant</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -168,79 +178,44 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
                 <!-- Service 1 -->
-                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
-                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
-                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-                    <div
-                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
-                    </div>
-                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">Drone & Satellite
-                        Analytics</h3>
-                    <p style="color: #555; line-height: 1.7;">Get precise bird's-eye insights on crop health, growth
+                <div class="core-service-card" data-animate="fade-up">
+                    <h3 class="service-title">Drone & Satellite Analytics</h3>
+                    <p class="service-desc">Get precise bird's-eye insights on crop health, growth
                         patterns, and irrigation needs using our autonomous drone fleet.</p>
                 </div>
 
                 <!-- Service 2 -->
-                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
-                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
-                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-                    <div
-                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
-                    </div>
-                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">Smart Soil
-                        Management</h3>
-                    <p style="color: #555; line-height: 1.7;">Automated IoT moisture sensors and nutrient trackers that
+                <div class="core-service-card" data-animate="fade-up">
+                    <h3 class="service-title">Smart Soil Management</h3>
+                    <p class="service-desc">Automated IoT moisture sensors and nutrient trackers that
                         deliver real-time soil data directly to your mobile dashboard.</p>
                 </div>
 
                 <!-- Service 3 -->
-                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
-                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
-                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-                    <div
-                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
-                    </div>
-                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">AI Yield
-                        Forecasting</h3>
-                    <p style="color: #555; line-height: 1.7;">Predict harvests months in advance with our machine
+                <div class="core-service-card" data-animate="fade-up">
+                    <h3 class="service-title">AI Yield Forecasting</h3>
+                    <p class="service-desc">Predict harvests months in advance with our machine
                         learning models trained on historical and climatic variables.</p>
                 </div>
 
                 <!-- Service 4 -->
-                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
-                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
-                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-                    <div
-                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
-                    </div>
-                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">Carbon Farming</h3>
-                    <p style="color: #555; line-height: 1.7;">Monetize your sustainable practices by generating carbon
+                <div class="core-service-card" data-animate="fade-up">
+                    <h3 class="service-title">Carbon Farming</h3>
+                    <p class="service-desc">Monetize your sustainable practices by generating carbon
                         credits. We help you track and verify your farm's carbon sequestration.</p>
                 </div>
 
                 <!-- Service 5 -->
-                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
-                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
-                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-                    <div
-                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
-                    </div>
-                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">Autonomous
-                        Machinery</h3>
-                    <p style="color: #555; line-height: 1.7;">Upgrade your fleet with self-driving tractors and robotic
+                <div class="core-service-card" data-animate="fade-up">
+                    <h3 class="service-title">Autonomous Machinery</h3>
+                    <p class="service-desc">Upgrade your fleet with self-driving tractors and robotic
                         harvesters designed to operate 24/7 with extreme precision.</p>
                 </div>
 
                 <!-- Service 6 -->
-                <div style="background: #f8fafc; border-radius: 20px; padding: 40px; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.05); position: relative; overflow: hidden; cursor: pointer;"
-                    onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)';"
-                    onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-                    <div
-                        style="width: 70px; height: 70px; background: rgba(46, 139, 87, 0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 25px;">
-                    </div>
-                    <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 15px;">Supply Chain
-                        Integration</h3>
-                    <p style="color: #555; line-height: 1.7;">Connect directly to global markets and distributors
+                <div class="core-service-card" data-animate="fade-up">
+                    <h3 class="service-title">Supply Chain Integration</h3>
+                    <p class="service-desc">Connect directly to global markets and distributors
                         through our transparent blockchain-based trading network.</p>
                 </div>
             </div>
@@ -252,7 +227,7 @@
     <section id="crops" class="crops">
         <h2 class="section-title">Featured Crops & Products</h2>
         <div class="crops-grid">
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/wheat.webp" alt="Wheat">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Premium Wheat</h4>
@@ -266,7 +241,7 @@
                     </p>
                 </div>
             </div>
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/corn.webp" alt="Corn">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Organic Corn</h4>
@@ -280,7 +255,7 @@
                     </p>
                 </div>
             </div>
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/soyabean.webp" alt="Soybeans">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Healthy Soybeans</h4>
@@ -294,7 +269,7 @@
                     </p>
                 </div>
             </div>
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/rice.webp" alt="Rice">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Organic Rice</h4>
@@ -308,7 +283,7 @@
                     </p>
                 </div>
             </div>
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/cotton.webp" alt="Cotton">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Premium Cotton</h4>
@@ -322,7 +297,7 @@
                     </p>
                 </div>
             </div>
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/sunflower.webp" alt="Sunflowers">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Golden Sunflowers</h4>
@@ -390,7 +365,7 @@
     <!-- Why Choose Us Section -->
     <section class="why-choose-us">
         <div class="why-container">
-            <div class="why-text">
+            <div class="why-text" data-animate="fade-right">
 
                 <h2 class="section-title" style="text-align:left; margin-bottom:20px;">Why Choose Us</h2>
                 <p class="why-desc">We combine decades of agricultural expertise with cutting-edge technology to deliver
@@ -424,7 +399,7 @@
                 <button class="btn-primary" style="margin-top:30px;" onclick="window.location.href='404.html'">Learn
                     More</button>
             </div>
-            <div class="why-image">
+            <div class="why-image" data-animate="fade-left">
                 <div class="why-img-wrap">
                     <img src="assets/6.webp" alt="Why Choose Us - Smart Farming" />
 
@@ -480,12 +455,12 @@
         <h2 class="section-title">How It Works</h2>
         <p class="section-subtitle" style="text-align:center; color:var(--text-dark); margin-bottom:30px;">Our smart
             farming process from sensor installation to yield improvement.</p>
-        <div class="how-it-image">
+        <div class="how-it-image" data-animate="fade-right">
             <img src="assets/smart1.webp" class="how-it-img"
                 style="width:100%; max-width:400px; height:280px; object-fit:cover; border-radius:16px; box-shadow:0 12px 40px rgba(15,81,50,0.15);" />
         </div>
         <div class="how-it-works-grid">
-            <div class="steps-container">
+            <div class="steps-container" data-animate="fade-left">
                 <div class="step-card">
                     <div class="step-icon-wrap">
                         <span class="step-number">1</span><span class="step-icon"></span>
@@ -542,7 +517,7 @@
             <div class="stat-item" style="text-align: left;">
                 <h4 style="color: var(--primary-color); margin-bottom: 10px;">New Drone Tech Introduced</h4>
                 <p>Read about how our latest drone surveillance is helping farmers detect crop diseases early. <a
-                        href="#" style="color: var(--accent-color);">Read More...</a></p>
+                        href="404.html" style="color: var(--accent-color);">Read More...</a></p>
             </div>
         </div>
     </section>
@@ -591,7 +566,7 @@
                     style="width:100%; max-width:320px; height:200px; object-fit:cover; margin-top:15px; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.18);" />
                 <p>Schedule a call with one of our professional agricultural consultants to receive a customized
                     automation assessment for your fields today.</p>
-                <button class="btn-primary" onclick="window.location.href='#footer'">Book Consultation Now</button>
+                <button class="btn-primary" onclick="window.location.href='404.html'">Book Consultation Now</button>
             </div>
         </div>
     </section>

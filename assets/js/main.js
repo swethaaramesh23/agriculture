@@ -132,7 +132,7 @@ if (heroImages.length > 0) {
         if (idx === 0) img.classList.add('active');
         else img.classList.remove('active');
     });
-    setInterval(showNextImage, 2000); // change every 2 seconds
+    setInterval(showNextImage, 5000); // change every 5 seconds
 }
 
 // FAQ accordion and scroll animations
