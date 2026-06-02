@@ -1,23 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agriculture - Smart Farming</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-GFK2g8b5gU1P5bP5K7B8r3N5yZ+7FQHRu+E0F9Yc0iW2VbD4Z1+5ZP4d7fX5z9jF0W3YfA5hQXvT6QJrO8MFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Header with Logo -->
-    <header class="header-404" style="padding: 20px; text-align: center; background: var(--bg-color);">
-        <a href="index.html"><img src="logo1.png" alt="Agriculture Logo" style="height: 60px;" /></a>
-    </header>
     <!-- Preloader -->
     <div id="preloader">
         <div class="preloader-content">
@@ -31,19 +25,19 @@
 
 
     <!-- Header -->
-    <header data-aos="fade-down">
+    <header>
         <div class="logo">
             <a href="index.html"><img src="logo1.png" alt="Agriculture Logo"></a>
         </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#crops">Products</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#news">Blogs</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="404.html">About</a></li>
+                <li><a href="404.html">Services</a></li>
+                <li><a href="404.html">Products</a></li>
+                <li><a href="404.html">How It Works</a></li>
+                <li><a href="404.html">Blogs</a></li>
+                <li><a href="404.html">FAQ</a></li>
                 <li class="mobile-only"><a href="404.html">Login</a></li>
                 <li class="mobile-only"><a href="404.html">Sign Up</a></li>
             </ul>
@@ -62,57 +56,67 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero" data-aos="fade-up">
+    <section id="hero" class="hero">
         <div class="hero-overlay"></div>
         <div class="leaves-container"></div> <!-- Container for floating leaves animation -->
         <div class="hero-grid">
-<div class="hero-left" data-aos="fade-right" data-aos-delay="100">
-    <div class="hero-image-wrap">
-        <img src="assets/1A.webp" alt="Premium Wheat Farming" class="hero-img hero-slide active">
-        <img src="assets/1B.webp" alt="Organic Corn Farming" class="hero-img hero-slide">
-        <img src="assets/13.webp" alt="Sustainable Soybeans Farming" class="hero-img hero-slide">
-    </div>
-</div>
-<div class="hero-right" data-aos="fade-left" data-aos-delay="200">
-    <div class="hero-content">
-        <span class="hero-tag" data-aos="zoom-in" data-aos-delay="300"> Welcome to the Future of Farming</span>
-        <h1 id="typewriter-title" data-aos="fade-up" data-aos-delay="400">Smart Farming for </h1>
-        <p class="hero-desc" data-aos="fade-up" data-aos-delay="500">Empowering farmers with modern technology and sustainable practices for a greener tomorrow.</p>
-        <p class="hero-text" data-aos="fade-up" data-aos-delay="600">Join a community of over 50,000 farmers utilizing our data-driven insights to maximize yield and minimize environmental impact. We provide everything from satellite crop monitoring to automated irrigation systems.</p>
-        <div class="hero-badges" data-aos="fade-up" data-aos-delay="700">
-            <span class="trust-badge"> 100% Organic</span>
-            <span class="trust-badge"> AI-Powered</span>
-            <span class="trust-badge"> Eco Friendly</span>
-        </div>
-        <div class="btn-group" data-aos="fade-up" data-aos-delay="800">
-            <button class="btn-primary btn-bounce" onclick="window.location.href='404.html'">Explore Services</button>
-            <button class="btn-secondary" onclick="window.location.href='404.html'">Contact Us</button>
-        </div>
-    </div>
-</div>
+            <div class="hero-left" data-animate="fade-right">
+                <div class="hero-image-wrap">
+                    <img src="assets/1A.webp" alt="Premium Wheat Farming" class="hero-img hero-slide active">
+                    <img src="assets/1B.webp" alt="Organic Corn Farming" class="hero-img hero-slide">
+                    <img src="assets/13.webp" alt="Sustainable Soybeans Farming" class="hero-img hero-slide">
+                </div>
+            </div>
+            <div class="hero-right" data-animate="fade-left">
+                <div class="hero-content">
+                    <span class="hero-tag"> Welcome to the Future of Farming</span>
+                    <h1 id="typewriter-title">Smart Farming for </h1>
+                    <p class="hero-desc">Empowering farmers with modern technology and sustainable practices for a
+                        greener tomorrow.</p>
+                    <p class="hero-text">Join a community of over 50,000 farmers utilizing our data-driven insights to
+                        maximize yield and minimize environmental impact. We provide everything from satellite crop
+                        monitoring to automated irrigation systems.</p>
+
+                    <!-- Trust Badges -->
+                    <div class="hero-badges">
+                        <span class="trust-badge"> 100% Organic</span>
+                        <span class="trust-badge"> AI-Powered</span>
+                        <span class="trust-badge"> Eco Friendly</span>
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="btn-primary" onclick="window.location.href='404.html'">Explore Services</button>
+                        <button class="btn-secondary" onclick="window.location.href='404.html'">Contact Us</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about-section" id="about" style="background: #f8fafc; padding: 100px 5%;" data-aos="fade-up">
+    <section class="about-section" id="about" style="background: #f8fafc; padding: 100px 5%;">
         <div style="max-width: 1200px; margin: 0 auto;">
             <div style="text-align: center; margin-bottom: 50px;">
-                <span data-aos="fade-down"
+                <span
                     style="display: inline-block; background: rgba(15, 81, 50, 0.1); color: var(--primary-color); padding: 8px 20px; border-radius: 30px; font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;">Our
                     Story</span>
-                <h2 data-aos="fade-up" data-aos-delay="100"
+                <h2
                     style="font-size: 3rem; color: var(--primary-color); margin-top: 15px; font-family: var(--font-heading); font-weight: 800;">
                     Cultivating a <span style="color: var(--accent-color);">Greener</span> Tomorrow</h2>
             </div>
 
             <div
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
-                <div style="position: relative;" data-aos="zoom-in" data-aos-delay="200">
+                <div style="position: relative;" data-animate="fade-right">
                     <img src="assets/7.webp" alt="Modern Agriculture"
                         style="width: 100%; height: 500px; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-
+                    <div
+                        style="position: absolute; bottom: -20px; right: -20px; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                        <h4 style="color: var(--accent-color); font-size: 2.5rem; font-weight: 800; margin: 0;">25+</h4>
+                        <p style="margin: 0; font-weight: 600; color: var(--text-dark);">Years of Innovation</p>
+                    </div>
                 </div>
-                <div data-aos="fade-left" data-aos-delay="300">
+                <div data-animate="fade-left">
                     <h3 style="font-size: 1.8rem; color: var(--primary-color); margin-bottom: 20px;">Leading the Digital
                         Transformation in Agriculture</h3>
                     <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 30px;">We are
@@ -120,50 +124,48 @@
                         analytics. Our mission is to empower local farmers and global agricultural enterprises to yield
                         more with less, preserving natural resources for future generations.</p>
 
-                    <ul style="list-style: none; padding: 0; margin-bottom: 40px;" class="about-feature-list">
-                        <li class="about-feature-li" data-aos="fade-right" data-aos-delay="400"
+                    <ul style="list-style: none; padding: 0; margin-bottom: 40px;">
+                        <li
                             style="display: flex; align-items: center; margin-bottom: 15px; font-size: 1.1rem; color: var(--text-dark); font-weight: 500;">
-                            <span class="about-check-icon icon-pulse"
-                                style="background: var(--accent-color); color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px;">✓</span>
+                            <span
+                                style="background: var(--accent-color); color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px;"></span>
                             100% Eco-Friendly Practices
                         </li>
-                        <li class="about-feature-li" data-aos="fade-right" data-aos-delay="500"
+                        <li
                             style="display: flex; align-items: center; margin-bottom: 15px; font-size: 1.1rem; color: var(--text-dark); font-weight: 500;">
-                            <span class="about-check-icon icon-pulse"
-                                style="background: var(--accent-color); color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px;">✓</span>
+                            <span
+                                style="background: var(--accent-color); color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px;"></span>
                             Next-Gen Smart Sensors
                         </li>
-                        <li class="about-feature-li" data-aos="fade-right" data-aos-delay="600"
+                        <li
                             style="display: flex; align-items: center; margin-bottom: 15px; font-size: 1.1rem; color: var(--text-dark); font-weight: 500;">
-                            <span class="about-check-icon icon-pulse"
-                                style="background: var(--accent-color); color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px;">✓</span>
+                            <span
+                                style="background: var(--accent-color); color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px;"></span>
                             Proven Yield Optimization
                         </li>
                     </ul>
 
-                    <div data-aos="zoom-in" data-aos-delay="700">
-                        <button class="btn-primary btn-read-story btn-bounce" style="padding: 15px 35px; font-size: 1.1rem;"
-                            onclick="window.location.href='404.html'">Read Our Full Story</button>
-                    </div>
+                    <button class="btn-primary" style="padding: 15px 35px; font-size: 1.1rem;"
+                        onclick="window.location.href='404.html'">Read Our Full Story</button>
                 </div>
             </div>
 
-            <div style="margin-top: 80px; text-align: center;" data-aos="fade-up">
+            <div style="margin-top: 80px; text-align: center;" data-animate="fade-up">
                 <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 30px;">The Journey of Growth
                 </h3>
                 <img src="assets/growth.webp" alt="Plant Growth Stages"
                     style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
                 <div class="growth-timeline">
-                    <div class="growth-step" style="transition-delay: 0.1s;">Seed</div>
-                    <div class="growth-step" style="transition-delay: 0.3s;">Small Plant</div>
-                    <div class="growth-step" style="transition-delay: 0.5s;">Full Plant</div>
+                    <div class="growth-step" data-animate="fade-right" style="transition-delay: 0.1s;">Seed</div>
+                    <div class="growth-step" data-animate="fade-up" style="transition-delay: 0.3s;">Small Plant</div>
+                    <div class="growth-step" data-animate="fade-left" style="transition-delay: 0.5s;">Full Plant</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="service-section" id="services" style="padding: 100px 5%; background: white;" data-aos="fade-up">
+    <section class="service-section" id="services" style="padding: 100px 5%; background: white;">
         <div style="max-width: 1200px; margin: 0 auto;">
             <div style="text-align: center; margin-bottom: 60px;">
                 <span
@@ -178,44 +180,42 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
                 <!-- Service 1 -->
-<!-- Service 1 updated without buttons -->
-                <div class="core-service-card" data-aos="fade-up">
+                <div class="core-service-card" data-animate="fade-up">
                     <h3 class="service-title">Drone & Satellite Analytics</h3>
-                    <p class="service-desc">Get precise bird's-eye insights on crop health, growth patterns, and irrigation needs using our autonomous drone fleet.</p>
+                    <p class="service-desc">Get precise bird's-eye insights on crop health, growth
+                        patterns, and irrigation needs using our autonomous drone fleet.</p>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="core-service-card">
+                <div class="core-service-card" data-animate="fade-up">
                     <h3 class="service-title">Smart Soil Management</h3>
                     <p class="service-desc">Automated IoT moisture sensors and nutrient trackers that
                         deliver real-time soil data directly to your mobile dashboard.</p>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="core-service-card">
+                <div class="core-service-card" data-animate="fade-up">
                     <h3 class="service-title">AI Yield Forecasting</h3>
                     <p class="service-desc">Predict harvests months in advance with our machine
                         learning models trained on historical and climatic variables.</p>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="core-service-card">
+                <div class="core-service-card" data-animate="fade-up">
                     <h3 class="service-title">Carbon Farming</h3>
                     <p class="service-desc">Monetize your sustainable practices by generating carbon
                         credits. We help you track and verify your farm's carbon sequestration.</p>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="core-service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="core-service-card" data-animate="fade-up">
                     <h3 class="service-title">Autonomous Machinery</h3>
-                    <p class="service-desc">
-                        Upgrade your fleet with AI‑driven autonomous tractors and harvesters that work 24/7,
-                        optimizing field operations and reducing labor costs while maintaining precision.
-                    </p>
+                    <p class="service-desc">Upgrade your fleet with self-driving tractors and robotic
+                        harvesters designed to operate 24/7 with extreme precision.</p>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="core-service-card">
+                <div class="core-service-card" data-animate="fade-up">
                     <h3 class="service-title">Supply Chain Integration</h3>
                     <p class="service-desc">Connect directly to global markets and distributors
                         through our transparent blockchain-based trading network.</p>
@@ -226,10 +226,10 @@
 
 
     <!-- Featured Crops Section -->
-    <section id="crops" class="crops" data-aos="fade-up">
+    <section id="crops" class="crops">
         <h2 class="section-title">Featured Crops & Products</h2>
         <div class="crops-grid">
-            <div class="crop-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/wheat.webp" alt="Wheat">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Premium Wheat</h4>
@@ -243,7 +243,7 @@
                     </p>
                 </div>
             </div>
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/corn.webp" alt="Corn">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Organic Corn</h4>
@@ -257,7 +257,7 @@
                     </p>
                 </div>
             </div>
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/soyabean.webp" alt="Soybeans">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Healthy Soybeans</h4>
@@ -271,7 +271,7 @@
                     </p>
                 </div>
             </div>
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/rice.webp" alt="Rice">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Organic Rice</h4>
@@ -285,7 +285,7 @@
                     </p>
                 </div>
             </div>
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/cotton.webp" alt="Cotton">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Premium Cotton</h4>
@@ -299,7 +299,7 @@
                     </p>
                 </div>
             </div>
-            <div class="crop-card">
+            <div class="crop-card" data-animate="fade-up">
                 <img src="assets/sunflower.webp" alt="Sunflowers">
                 <div class="crop-info" style="padding-bottom: 20px;">
                     <h4>Golden Sunflowers</h4>
@@ -317,7 +317,7 @@
     </section>
 
     <!-- Scrolling Statistics Banner -->
-    <section class="stats-banner" data-aos="fade-up">
+    <section class="stats-banner">
         <div class="stats-track">
             <div class="stats-slide">
                 <div class="stat-bubble">
@@ -365,35 +365,35 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="why-choose-us" data-aos="fade-up">
+    <section class="why-choose-us">
         <div class="why-container">
-            <div class="why-text">
+            <div class="why-text" data-animate="fade-right">
 
                 <h2 class="section-title" style="text-align:left; margin-bottom:20px;">Why Choose Us</h2>
                 <p class="why-desc">We combine decades of agricultural expertise with cutting-edge technology to deliver
                     results that matter â€” for your farm and for the planet.</p>
                 <div class="why-features">
-                    <div class="why-item" data-animate="fade-up" style="transition-delay: 0s">
+                    <div class="why-item">
                         <span class="why-check"></span>
                         <span>Sustainable Farming</span>
                     </div>
-                    <div class="why-item" data-aos="fade-up" data-animate-delay="200">
+                    <div class="why-item">
                         <span class="why-check"></span>
                         <span>AI Powered Technology</span>
                     </div>
-                    <div class="why-item" data-aos="fade-up" data-animate-delay="300">
+                    <div class="why-item">
                         <span class="why-check"></span>
                         <span>24/7 Support</span>
                     </div>
-                    <div class="why-item" data-aos="fade-up" data-animate-delay="400">
+                    <div class="why-item">
                         <span class="why-check"></span>
                         <span>Organic Solutions</span>
                     </div>
-                    <div class="why-item" data-aos="fade-up" data-animate-delay="500">
+                    <div class="why-item">
                         <span class="why-check"></span>
                         <span>Expert Consultants</span>
                     </div>
-                    <div class="why-item" data-aos="fade-up" data-animate-delay="600">
+                    <div class="why-item">
                         <span class="why-check"></span>
                         <span>Smart Monitoring</span>
                     </div>
@@ -401,7 +401,7 @@
                 <button class="btn-primary" style="margin-top:30px;" onclick="window.location.href='404.html'">Learn
                     More</button>
             </div>
-            <div class="why-image">
+            <div class="why-image" data-animate="fade-left">
                 <div class="why-img-wrap">
                     <img src="assets/6.webp" alt="Why Choose Us - Smart Farming" />
 
@@ -411,7 +411,7 @@
     </section>
 
     <!-- Weather & Market Prices -->
-    <section class="weather-market" style="background: #f1f5f9;" data-aos="fade-up">
+    <section class="weather-market" style="background: #f1f5f9;">
         <h2 class="section-title">Weather & Market Prices</h2>
         <div class="about-grid">
             <div class="stat-item">
@@ -452,49 +452,18 @@
         </div>
     </section>
 
-    <section class="about-section" id="about" style="background: #f8fafc; padding: 100px 5%;" data-aos="fade-up">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <div style="text-align: center; margin-bottom: 50px;">
-                
-                <h2 data-aos="fade-up" style="font-size: 3rem; color: var(--primary-color); margin-top: 15px; font-family: var(--font-heading); font-weight: 800;">Leading Agriculture Innovation</h2>
-                <p data-aos="fade-up" style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 20px auto 0;">We combine technology and expertise to empower farmers worldwide.</p>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
-                <div style="position: relative;" data-aos="fade-right">
-                    <img src="assets/7.webp" alt="Modern Agriculture"
-                        style="width: 100%; height: 500px; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-                    <div class="overlay"></div>
-                    <div class="card-content">
-                        <p style="margin: 0; font-weight: 600; color: var(--text-dark);">Years of Innovation</p>
-                    </div>
-                </div>
-                <div data-aos="fade-left">
-                    <h3 style="font-size: 1.8rem; color: var(--primary-color); margin-bottom: 20px;">Leading the Digital
-                        Transformation in Agriculture</h3>
-                    <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 30px;">We are
-                        revolutionizing the farming industry by integrating state-of-the-art AI, IoT sensors, and drone
-                        analytics. Our mission is to empower local farmers and global agricultural enterprises to yield
-                        more with less, preserving natural resources for future generations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works" data-animate="fade-up">
-        <h2 class="section-title" data-animate="fade-up">How It Works</h2>
-        <p class="section-subtitle" data-animate="fade-up" style="text-align:center; color:var(--text-dark); margin-bottom:30px;">Our smart
+    <section id="how-it-works" class="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle" style="text-align:center; color:var(--text-dark); margin-bottom:30px;">Our smart
             farming process from sensor installation to yield improvement.</p>
-        <div class="how-it-image" data-animate="back-move">
-
+        <div class="how-it-image" data-animate="fade-right">
             <img src="assets/11.webp" class="how-it-img"
                 style="width:100%; max-width:400px; height:280px; object-fit:cover; border-radius:16px; box-shadow:0 12px 40px rgba(15,81,50,0.15);" />
         </div>
-        <div class="how-it-works-grid" data-animate="fade-up">
+        <div class="how-it-works-grid">
             <div class="steps-container" data-animate="fade-left">
-                <div class="step-card" data-animate="slide-left">
-
+                <div class="step-card" data-animate="grow-up">
                     <div class="step-icon-wrap">
                         <span class="step-number">1</span><span class="step-icon"></span>
                         <h3>Connect Sensors</h3>
@@ -503,8 +472,7 @@
                             levels instantly.</p>
                     </div>
                 </div>
-                <div class="step-card" data-animate="slide-right">
-
+                <div class="step-card" data-animate="grow-up">
                     <div class="step-icon-wrap">
                         <span class="step-number">2</span><span class="step-icon"></span>
                         <h3>Monitor Crops</h3>
@@ -512,9 +480,9 @@
                             app.
                         </p>
                     </div>
-                </div>
-                <div class="step-card" data-animate="slide-left">
 
+                </div>
+                <div class="step-card" data-animate="grow-up">
                     <div class="step-icon-wrap">
                         <span class="step-number">3</span><span class="step-icon"></span>
                         <h3>Analyze Data</h3>
@@ -523,20 +491,13 @@
                             disease reports.</p>
                     </div>
                 </div>
-                <div class="step-card">
+                <div class="step-card" data-animate="grow-up">
                     <div class="step-icon-wrap">
                         <span class="step-number">4</span><span class="step-icon"></span>
                         <h3>Improve Yield</h3>
                         <p>Apply highly precise, automated smart irrigation to dramatically boost output while cutting
                             water
                             costs by 30%.</p>
-                    </div>
-                </div>
-                <div class="step-card">
-                    <div class="step-icon-wrap">
-                        <span class="step-number">5</span><span class="step-icon"></span>
-                        <h3>Monitor Harvest</h3>
-                        <p>Real-time yield monitoring with AI analytics to maximize efficiency and reduce waste.</p>
                     </div>
                 </div>
 
@@ -546,17 +507,37 @@
 
 
     <!-- Testimonials & News -->
-    <section id="news" class="testimonials" data-aos="fade-up" style="background: white;">
+    <section id="news" class="testimonials" style="background: white;">
         <h2 class="section-title">Latest News & Testimonials</h2>
         <div class="about-grid">
             <div class="stat-item">
-                <div style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 10px;">
-                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <p style="font-style: italic; font-size: 1.1rem;">"Since partnering with them, our crop yield
+                            has increased by 40% and
+                            water usage dropped significantly."</p>
+                        <h4 style="margin-top: 20px; font-size: 1.2rem; color: var(--primary-color);">- John Doe, Local
+                            Farmer</h4>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p style="font-style: italic; font-size: 1.1rem;">"The AI-powered analytics completely
+                            transformed how we manage our 500-acre farm. We saved over $50,000 in the first year alone."
+                        </p>
+                        <h4 style="margin-top: 20px; font-size: 1.2rem; color: var(--primary-color);">- Sarah Wilson,
+                            AgriCorp Manager</h4>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p style="font-style: italic; font-size: 1.1rem;">"Their IoT sensors detected a pest outbreak 2
+                            weeks before it would have been visible. Saved our entire soybean harvest!"</p>
+                        <h4 style="margin-top: 20px; font-size: 1.2rem; color: var(--primary-color);">- Raj Patel,
+                            Organic Farmer</h4>
+                    </div>
                 </div>
-                <p style="font-style: italic;">"Since partnering with them, our crop yield has increased by 40% and
-                    water usage dropped significantly."</p>
-                <h4 style="margin-top: 20px; font-size: 1.2rem; color: var(--primary-color);">- John Doe, Local Farmer
-                </h4>
+                <div class="testimonial-indicators">
+                    <button class="testimonial-dot active" aria-label="Testimonial 1"></button>
+                    <button class="testimonial-dot" aria-label="Testimonial 2"></button>
+                    <button class="testimonial-dot" aria-label="Testimonial 3"></button>
+                </div>
             </div>
             <div class="stat-item" style="text-align: left;">
                 <h4 style="color: var(--primary-color); margin-bottom: 10px;">New Drone Tech Introduced</h4>
@@ -566,8 +547,9 @@
         </div>
     </section>
 
+
     <!-- FAQ Section -->
-    <section id="faq" class="faq-section" data-aos="fade-up">
+    <section id="faq" class="faq-section">
         <h2 class="section-title">Frequently Asked Questions</h2>
         <div class="faq-container">
             <div class="faq-item animate-fade">
@@ -600,7 +582,7 @@
     </section>
 
     <!-- Contact CTA Banner -->
-    <section class="cta-banner" data-aos="fade-up">
+    <section class="cta-banner">
         <div class="cta-banner-content">
             <div class="cta-content">
 
@@ -616,7 +598,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer" data-aos="fade-up">
+    <footer id="footer">
         <div class="footer-grid">
             <div class="footer-col">
                 <a href="index.html"><img src="logo1.png" alt="Agriculture Logo"
@@ -662,7 +644,8 @@
                 <input type="email" placeholder="Your Email"
                     style="padding: 10px; width: 100%; margin-top: 10px; border-radius: 5px; border: none;">
                 <button
-                    style="padding: 10px; width: 100%; margin-top: 10px; background: var(--accent-color); border: none; border-radius: 5px; cursor: pointer;" onclick="window.location.href='404.html'">Subscribe</button>
+                    style="padding: 10px; width: 100%; margin-top: 10px; background: var(--accent-color); border: none; border-radius: 5px; cursor: pointer;"
+                    onclick="window.location.href='404.html'">Subscribe</button>
             </div>
             <div class="footer-col footer-map">
                 <h4>Our Head Office</h4>
@@ -678,7 +661,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" aria-label="Back to Top">â–²</button>
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top"></button>
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
